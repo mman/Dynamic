@@ -17,7 +17,7 @@ class TypeMapping {
         (CharacterSet.self, NSCharacterSet.self),
         (Data.self, NSData.self),
         (DateComponents.self, NSDateComponents.self),
-        (DateInterval.self, NSDateInterval.self),
+//        (DateInterval.self, NSDateInterval.self),
         (Date.self, NSDate.self),
         (Decimal.self, NSDecimalNumber.self),
         (Dictionary<AnyHashable, Any>.self, NSDictionary.self),
@@ -69,7 +69,7 @@ class TypeMapping {
         case is CharacterSet: return object as? NSCharacterSet
         case is Data: return object as? NSData
         case is DateComponents: return object as? NSDateComponents
-        case is DateInterval: return object as? NSDateInterval
+//        case is DateInterval: return object as? NSDateInterval
         case is Date: return object as? NSDate
         case is Decimal: return object as? NSDecimalNumber
         case is Dictionary<AnyHashable, Any>: return object as? NSDictionary
@@ -97,14 +97,14 @@ class TypeMapping {
         case is NSCharacterSet: return object as? CharacterSet
         case is NSData: return object as? Data
         case is NSDateComponents: return object as? DateComponents
-        case is NSDateInterval: return object as? DateInterval
+//        case is NSDateInterval: return object as? DateInterval
         case is NSDate: return object as? Date
         case is NSDecimalNumber: return object as? Decimal
         case is NSDictionary: return object as? Dictionary<AnyHashable, Any>
         case is NSIndexPath: return object as? IndexPath
         case is NSIndexSet: return object as? IndexSet
         case is NSLocale: return object as? Locale
-        case is NSMeasurement: return object as? Measurement
+//        case is NSMeasurement: return object as? Measurement
         case is NSNotification: return object as? Notification
         case is NSPersonNameComponents: return object as? PersonNameComponents
         case is NSSet: return object as? Set<AnyHashable>
